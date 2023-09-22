@@ -1,41 +1,38 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "expose_n00bbots",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Expose N00bBots",
+	"description": "Exposing the mysterious nature of N00bBots! Now you'll be able to see clearly!",
 	"authors": [
-		"Me!"
+		"EnderKill98"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/expose_n00bbots/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"me.enderkill98.expose_n00bbots.MainMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"me.enderkill98.expose_n00bbots.ClientMod"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"expose_n00bbots.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "expose_n00bbots.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.14.22",
-		"minecraft": "~1.20.2",
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20",
 		"java": ">=17",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
